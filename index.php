@@ -54,15 +54,25 @@
     ];
     ?>
     <!-- php data end -->
-    <div class="container">
-        <?php foreach ($faqs as $faq => $responses) : ?>
-            <h2><?php echo $faq ?></h2>
-            <?php foreach ($responses as $response) : ?>
-                <?php echo $response ?>
-            <?php endforeach; ?>
-        <?php endforeach; ?>
 
-    </div>
+    <!-- start body -->
+    <header>
+        <div class="logo">
+            <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="">
+            <div class="logo-text">Privacy e Termini</div>
+        </div>
+
+    </header>
+    <main>
+        <div class="container">
+            <?php foreach ($faqs as $faq => $responses) : ?>
+                <h2><?php echo $faq ?></h2>
+                <?php foreach ($responses as $response) : ?>
+                    <?php echo $response ?>
+                <?php endforeach; ?>
+            <?php endforeach; ?>
+        </div>
+    </main>
 </body>
 
 </html>
